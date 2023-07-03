@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#container {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url("./maths.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 6rem;
+    text-shadow: 0 0 4px #0ff;
+    font-size: 3rem;
+}
+
+form {
+    background-color: #dddddd90;
+    height: 30%;
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    
+    gap: .25rem;
+    padding: 1rem;
+    box-shadow: 0 0 8px 10px #fff;
+}
+
+form,
+button, 
+input[type="reset"] {
+    border-radius: 8px;
+ }
+
+label {
+    width: max-content;
+    color: #fff;
+    background-color: #00000080;
+}
+
+input,
+select {
+    padding: 0 .25rem;
+    border-radius: 6px;
+}
+
+button, 
+input[type="reset"] {
+    width: 50%;
+    align-self: center;
+    margin-top: .5rem;
+    padding: .25rem;
+
+    background-color: lightblue;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 2px #000;
+    cursor: pointer;
+}
+
+button:active, 
+input[type="reset"]:active {
+    transform: translateY(4px);
+} 
